@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eatwell - Make The World A Tastier Place</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/shared.css" />
+        <script src="/scripts/responsive.js" defer></script>
+    </head>
+    <body>
+        <header id="main-header">
+            <div id="logo"><a href="/">InterviewHub</a></div>
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="/interviews">Browse Interview Exp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/shareExp">Share Interview Exp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about">About InterviewHub</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="drawer-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <aside id="mobile-drawer">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="restaurants.html">Browse Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recommend.html">Share a Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About Eatwell</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="container">
+                <h1>Interview Experience Details</h1>
+
+                <div class="article">
+                    <h2><%= Details.companyName %></h2>
+                    <div class="article-meta">
+                        <p><%= Details.studentName %></p>
+                        <p><%= Details.phoneNumber %></p>
+                        <p><%= Details.department %></p>
+                    </div>
+                    <div class="article-content">
+                        <p><%= Details.interviewExperience %></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
